@@ -9,7 +9,7 @@ object newMain {
    * @param args the command line arguments
    */
   def main(args: Array[String]): Unit = {
-    println("Hello, world!")
+    println("Hello, world 2!")
   }
 
 }
