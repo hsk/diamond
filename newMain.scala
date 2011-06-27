@@ -1,6 +1,5 @@
 /*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
+ * test comment
  */
 
 object newMain {
@@ -9,7 +8,7 @@ object newMain {
    * @param args the command line arguments
    */
   def main(args: Array[String]): Unit = {
-    println("Hello, world "+exp(1,"+",(2,"*",3)))
+    println("Hello, world 2 "+exp(1,"+",(2,"*",3)))
   }
 
   def exp(a:Any):Int = {
