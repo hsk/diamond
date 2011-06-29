@@ -9,17 +9,18 @@ object newMain {
    * @param args the command line arguments
    */
   def main(args: Array[String]): Unit = {
-    println("Hello, world "+exp(1,"+",(2,"*",3)))
+    println(calc(1,"+",(2,"*",3)))
   }
 
-  def exp(a:Any):Int = {
+  def calc(a:Any):Int = {
     a match {
     case a:Int => a
-    case (a,"+",b) => exp(a)+exp(b)
-    case (a,"-",b) => exp(a)-exp(b)
-    case (a,"*",b) => exp(a)*exp(b)
-    case (a,"/",b) => exp(a)/exp(b)
-    case _ => throw new Exception("error")
+    case (a,"+",b) => calc(a)+calc(b)
+    case (a,"-",b) => calc(a)-calc(b)
+    case (a,"*",b) => calc(a)*calc(b)
+    case (a,"/",b) => calc(a)/calc(b)
+    case (a, b, c) => throw new Exception ("unknown operator '"+b+"'" )
+    case a => throw new Exception("unexpected"+a)
     }
   }
 
