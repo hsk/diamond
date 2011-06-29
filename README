@@ -1,2 +1,10 @@
 test
 
+Do so if you use https.
+
+git remote add origin https://hsk@github.com/hsk/diamond.git
+git push origin master
+Password: [your github password]
+
+
+
